@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
-use hml;
-$hash{'age'};
+
+ $age;
  $BMI;
 if ($BMI < 18.9) {
 print "you are too light!\n";
@@ -43,4 +43,9 @@ sub BMI {
  return $BMI;
 }
 
+sub age{
+print "your age:\n";
+$age = <STDIN>;
+chomp $age;
+}
 
