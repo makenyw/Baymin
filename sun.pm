@@ -84,3 +84,5 @@ sub sleepingtime {
    print "\nYou need a lot of time to sleep.\n";
   }
 }
+
+1;
