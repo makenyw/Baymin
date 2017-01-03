@@ -1,8 +1,11 @@
 #!/usr/bin/perl 
 use strict;
 use warnings;
-my $age=18;
-my $BMI=22;
+require ('hu.pl');
+our %hash;
+my $age;
+my $BMI;
+print "$hash{'age'}\n";
  if($BMI<18.9){
 print "you are too light!\n";
 print "Do some basic  exercise and enhanced nutrient intake!\n";
@@ -13,9 +16,6 @@ print "Do some basic  exercise and enhanced nutrient intake!\n";
 print "Yoga for an hour or jogging for an hour.please choice one.\n";
   }
 }
-
-
-
  elsif ($BMI>24.9){
 print"you are overweight!\n";
 print"Do more exercise to keep health!\n";
@@ -44,8 +44,5 @@ sub BMI {
  my ($BMI);
  $BMI = ( $weigh / ( $heigh * $heigh ) ) ;
  return $BMI;
-}
-
-sub age{
 }
 
